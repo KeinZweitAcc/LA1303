@@ -26,6 +26,7 @@
 | 4.1  | Applikation wurde gestartet | JSON-Eingabe: { "argumentA":"10", "argumentB":"1", "argumentC":"4" } | Die Gleichung ist mit den Werten -0.41742 und -9.58258 als x lösbar |
 | 5.1  | Applikation wurde gestartet | JSON-Eingabe: { "argumentA":"10", "argumentB":"1", "argumentC":"40" } | Die gegebene Gleichung ist nicht lösbar |
 | 6.1  | Applikation wurde gestartet | JSON-Eingabe: { "argumentA":"100", "argumentB":"B", "argumentC":"C" } | Die Eingabe muss aus drei Zahlen bestehen |
+| 7.1  | Applikation wurde gestartet | JSON-Eingabe: { "argumentA":"0", "argumentB":"2", "argumentC":"1" } | Der Parameter a darf nicht 0 sein |
 
 
 ## 2 Planen
@@ -34,7 +35,16 @@
 
 | AP-№ | Frist | Zuständig | Beschreibung | Geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  | 22.12.23 | Agachan | Entwurf der Multiple-Choice-Fragen, um eine Auswahl an Fragen für das Quiz zu haben | 60 Min |
+| 0.A  | 23.02.24 | Greub | Projektdokumentation erstellen | 360 Min |
+| 1.A  | 23.02.24 | Greub | API gibt Wert zurück | 120 Min |
+| 1.B  | 23.02.24 | Greub | API reagiert auf Eingabe | 180 Min |
+| 2.A  | 23.02.24 | Greub | Ergebnis wird korrekt berechnet und dem Benutzer geschickt | 300 Min |
+| 3.A  | 23.02.24 | Greub | Beide Lösungen werden berechnet und dem Benutzer geschickt | 240 Min |
+| 4.A  | 23.02.24 | Greub | Ergebnis wird gerundet | 30 Min |
+| 5.A  | 23.02.24 | Greub | Nicht lösbare abfangen | 120 Min |
+| 6.A  | 23.02.24 | Greub | Ungültige Eingaben abfangen | 30 Min |
+| 7.A  | 23.02.24 | Greub | Parameter a als 0 abfangen | 30 Min |
+| 0.B  | 01.03.24 | Greub | Mahara Eintrag schreiben | 300 Min |
 
 
 
@@ -45,16 +55,19 @@ Ich habe überlegt, ob ich zusätzlich zu dem Backend noch ein Frontend erstelle
 
 ## 4 Realisieren
 
-| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
-| ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A | 22.12.23 | Agachan |  60 Min | 30 Min |
-| 2.A | 22.12.23 | Alberto |  60 Min | 30 Min |
-| 3.A | 22.12.23 | Manuel |  60 Min | 60 Min |
-| 4.A | 22.12.23 | Samuel |  60 Min | 45 Min |
-| 5.A | 22.12.23 | Agachan | 60 Min | 60 Min |
-| 6.A | 22.12.23 | Alberto | 60 Min | 60 Min |
-| 7.A | 22.12.23 | Manuel |  60 Min | 30 Min  |
 
+| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
+| ---- | ----- | --------- | ------------ | ------------- |
+| 0.A  | 12.01.24 | Greub |  360 Min | 300 Min | 
+| 1.A  | 19.01.24 | Greub |  120 Min | 240 Min |
+| 1.B  | 19.01.24 | Greub |  180 Min | 120 Min |
+| 2.A  | 26.01.24 | Greub |  300 Min | 240 Min |
+| 3.A  | 02.02.24 | Greub |  240 Min | 180 Min |
+| 4.A  | 23.02.24 | Greub |  30 Min | 30 Min |
+| 5.A  | 23.02.24 | Greub |  120 Min | 180 Min |
+| 6.A  | 23.02.24 | Greub |  30 Min | 20 Min |
+| 7.A  | 23.02.24 | Greub |  30 Min | 15 Min |
+| 0.B  | 01.03.24 | Greub |  300 Min | 360 Min |
 
 
 
@@ -62,14 +75,17 @@ Ich habe überlegt, ob ich zusätzlich zu dem Backend noch ein Frontend erstelle
 
 ### 5.1 Testprotokoll
 
+Die API-Schnittstelle wurde mit Hilfe von Swagger ausführlich getestet. 
+
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  | 12.01.24      |  OK        | Agachan       |
-| 2.1  | 12.01.24      |  OK        | Agachan       |
-| 3.1  | 12.01.24      |  OK        | Alberto       |
-| 4.1  | 12.01.24      |  OK        | Alberto        |
-| 5.1  | 12.01.24      |  OK        | Manuel        |
-| 6.1  | 12.01.24      |  OK        | Manuel        |
-| 7.1  | 12.01.24      |  OK        | Samuel        |
+| 1.1  | 01.03.24      |  OK        | Greub       |
+| 2.1  | 01.03.24      |  OK        | Greub       |
+| 3.1  | 01.03.24      |  OK        | Greub       |
+| 4.1  | 01.03.24      |  OK        | Greub       |
+| 5.1  | 01.03.24      |  OK        | Greub       |
+| 6.1  | 01.03.24      |  OK        | Greub       |
+| 7.1  | 01.03.24      |  OK        | Greub       |
 
-Es gab keine Probleme und alles wurde richtig implementiert.
+Die gesetzten Ziele konnten alle im Rahmen des Projektes umgesetzt werden.
+
